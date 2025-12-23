@@ -22,7 +22,8 @@ dependencies:
   dio: ^5.9.0
   lean_builder: ^0.1.4
   protobuf: ^6.0.0
-  retrofit: ^4.9.1
+  retrofit:
+    path: ../retrofit
   source_gen: ^4.1.1
 
 dev_dependencies:
