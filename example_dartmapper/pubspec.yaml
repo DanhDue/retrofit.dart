@@ -2,26 +2,34 @@ name: retrofit_example
 description: retrofit_example
 version: 1.0.0+1
 environment:
-  sdk: '>=3.3.0 <4.0.0'
+  sdk: '>=3.8.0 <4.0.0'
 
 dependencies:
-  dart_json_mapper: ^2.2.13
-  dio: ^5.7.0
+  dart_json_mapper:
+    git:
+      url: https://github.com/D3FOutsourcing/dart-json-mapper.git
+      ref: analyzer
+      path: mapper
+  dio: ^5.9.0
   http_parser: ^4.0.2
   json_annotation: ^4.9.0
   logger: ^2.4.0
-  reflectable: ^4.0.6
+  reflectable: ^5.1.0
   retrofit:
 
 dev_dependencies:
-  build_runner: ^2.4.0
-  json_serializable: ^6.8.0
-  lints: ^4.0.0
+  build_runner: ^2.4.14
+  json_serializable: ^6.11.3
+  lints: ^6.0.0
   mock_web_server: ^5.0.0-nullsafety.1
   retrofit_generator:
-  test: ^1.25.0
+  test: ^1.25.15
 
 dependency_overrides:
+  analyzer: ^9.0.0
+  build: ^4.0.3
+  source_gen: ^4.1.1
+  reflectable: ^5.1.0
   retrofit:
     path: ../retrofit
   retrofit_generator:

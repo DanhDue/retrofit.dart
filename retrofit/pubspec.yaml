@@ -17,6 +17,6 @@ dependencies:
   meta: ^1.16.0
 
 dev_dependencies:
-  lints: any
+  lints: ^6.0.0
   coverage: any
   test: any
